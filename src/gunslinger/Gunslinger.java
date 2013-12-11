@@ -18,8 +18,8 @@ public class Gunslinger extends Applet implements Runnable, KeyListener {
 	private Player player1;
 	private Player player2;
 	private Image image, player1Image, player2Image;
-	private String player1Skin = "data/defaultplayer1.png";
-	private String player2Skin = "data/defaultplayer2.png";
+	private String player1Skin = "images/defaultplayer1.png";
+	private String player2Skin = "images/defaultplayer2.png";
 	private Graphics second;
 	private URL base;
 
