@@ -52,6 +52,9 @@ public class Gunslinger extends Applet implements Runnable, KeyListener {
 
 	@Override
 	public void start() {
+		player1 = new Player();
+		player2 = new Player();
+		
 		Thread thread = new Thread(this);
 		thread.start();
 	}
