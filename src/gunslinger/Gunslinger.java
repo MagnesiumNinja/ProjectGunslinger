@@ -27,7 +27,7 @@ public class Gunslinger extends Applet implements Runnable, KeyListener {
 	public void init() {
 		// Frame setup
 		setSize(700, 500);
-		setBackground(Color.BLACK);
+		setBackground(Color.WHITE);
 		setFocusable(true);
 		Frame frame = (Frame) this.getParent().getParent();
 		frame.setTitle("Project Gunslinger v0.0.1");
@@ -42,12 +42,6 @@ public class Gunslinger extends Applet implements Runnable, KeyListener {
 		// Image setup
 		player1Image = getImage(base, player1Skin);
 		player2Image = getImage(base, player2Skin);
-
-		// Positions
-		player1.setCenterX(200);
-		player1.setCenterY(300);
-		player2.setCenterX(500);
-		player2.setCenterY(300);
 	}
 
 	@Override
@@ -55,6 +49,12 @@ public class Gunslinger extends Applet implements Runnable, KeyListener {
 		player1 = new Player();
 		player2 = new Player();
 		
+		// Positions
+		player1.setCenterX(200);
+		player1.setCenterY(300);
+		player2.setCenterX(500);
+		player2.setCenterY(300);
+				
 		Thread thread = new Thread(this);
 		thread.start();
 	}
